@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Components/Navbar";
+import Timer from "./Components/timer";
+import Para from "./Components/Para";
+import Reset from "./Components/reset";
+import Escape from "./Components/esc";
+import NoWords from "./Components/noWords";
+import Footer from "./Components/Footer";
+import "./main.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    return (
+        <section className="main-container">
+            <Navbar />
+            <Timer />
+            <Para />
+            <Reset />
+            <Escape />
+            <NoWords />
+            <Footer />
+        </section>
+    )
 }
 
 export default App;
